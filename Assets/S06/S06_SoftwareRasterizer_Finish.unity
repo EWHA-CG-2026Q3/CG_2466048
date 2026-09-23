@@ -285,9 +285,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::S06_SoftwareRasterizer_Finish
   canvasWidth: 256
   canvasHeight: 256
-  vertexA: {x: 128, y: 200}
-  vertexB: {x: 60, y: 60}
-  vertexC: {x: 200, y: 60}
+  vertexA: {x: 30, y: 220}
+  vertexB: {x: 10, y: 20}
+  vertexC: {x: 230, y: 90}
   fillColor: {r: 0.50195086, g: 0.6856525, b: 0.83396226, a: 1}
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &1290225198
