@@ -25,6 +25,13 @@ public class S09_Shear : MonoBehaviour
         diamondMesh.SetVertices(verts);
     }
 
+    void OnValidate()
+    {
+        Vector3 top = new Vector3(0.5f, 1f, 0.5f);
+        Vector3 result = FromHomogeneous(MultiplyMatrixVectorRaw(ShearMatrixRaw(k), ToHomogeneous(top)));
+        Debug.Log($"k = {k} / 꼭대기 정점 {top} → {result}");
+    }
+
     // 1열: e1 그대로 / 2열: e2 → (k, 1, 0, 0) / 3열: e3 그대로 / 4열: 원점 그대로
     float[,] ShearMatrixRaw(float k)
     {
