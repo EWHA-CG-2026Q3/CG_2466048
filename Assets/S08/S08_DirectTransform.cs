@@ -61,6 +61,10 @@ public class S08_DirectTransform : MonoBehaviour
                 verts = ApplyTranslation(baseVertices, translation);
                 verts = ApplyScale(verts, scale);
                 break;
+            case DemoMode.ScaleThenTranslate:
+                verts = ApplyScale(baseVertices, scale);
+                verts = ApplyTranslation(verts, translation);
+                break;
             default:
                 verts = baseVertices;
                 break;
